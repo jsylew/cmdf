@@ -7,6 +7,7 @@ import time
 # Imports the Google Cloud client library
 from google.cloud import vision
 from google.cloud.vision import types
+# export GOOGLE_APPLICATION_CREDENTIALS="cmd-f-077e0d81dfbf.json"
 
 # Instantiates a client
 # client = vision.ImageAnnotatorClient()
