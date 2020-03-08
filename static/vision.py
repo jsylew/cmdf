@@ -12,7 +12,7 @@ from google.cloud.vision import types
 # Instantiates a client
 # client = vision.ImageAnnotatorClient()
 
-banned_object_list = ["Mobile phone", "Canned packaged goods"]
+banned_object_list = ["Mobile phone", "Canned packaged goods", "Packaged goods"]
 
 
 def localize_objects(path):

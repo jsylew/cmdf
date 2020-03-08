@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Stop It</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../static/stopitScript.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../static/stopitCSS.css">
 </head>
 <body>
-    <div class="hero_section">
-        <img class="hero_logo" src="../static/stopit_logo.png"
-               alt="stop it logo" />
+<div class="hero_section">
+    <img class="hero_logo" src="../static/stopit_logo.png"
+         alt="stop it logo" />
 
-        <h3 class="padding-top">Stop this:</h3>
-        <div class="btn_box">
-            <img class="icons" id="mobile" alt="mobile" src="../static/mobile.png" onclick=(select(this.id)); />
-            <img class="icons" id="drink" alt="drink" src="../static/drink.png" onclick=(select(this.id)); />
-            <img class="icons" id="smoke" alt="smoke" src="../static/smoke.png" onclick=(select(this.id)); />
-            <img class="icons" id="snack" alt="snack" src="../static/snack.png" onclick=(select(this.id)); />
-        </div>
-        <button id="startStop" class="choices" onclick="runTimer()">Start</button>
-        <button id="clearTime" class="choices" onclick="clearTimer()">Clear</button>
-        <div>
-            <h2 id="time">00:00:00</h2>
-        </div>
+    <h3 class="padding-top">Stop this:</h3>
+    <div class="btn_box">
+        <img class="icons" id="mobile" alt="mobile" src="../static/mobile.png" onclick=(select(this.id)); />
+        <img class="icons" id="drink" alt="drink" src="../static/drink.png" onclick=(select(this.id)); />
+        <img class="icons" id="smoke" alt="smoke" src="../static/smoke.png" onclick=(select(this.id)); />
+        <img class="icons" id="snack" alt="snack" src="../static/snack.png" onclick=(select(this.id)); />
     </div>
+    <button id="startStop" class="choices">Start</button>
+    <button id="clearTime" class="choices">Clear</button>
+    <div>
+        <h2 id="time">00:00:00</h2>
+    </div>
+    <div id="container">
+        <video autoplay="true" id="videoElement">
+
+        </video>
+    </div>
+{#    <div id="container">#}
+{#        <video id="videoElement">#}
+{#        </video>#}
+{#    </div>#}
+</div>
 </body>
 </html>

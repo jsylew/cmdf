@@ -1,5 +1,5 @@
 import cv2
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from static import vision
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
@@ -13,7 +13,6 @@ def hello_world(name=None):
 @app.route('/stop_it')
 def stop_it():
     cap = cv2.VideoCapture(0)
-
     while True:
         # Capture frame-by-frame
         ret, frame = cap.read()
