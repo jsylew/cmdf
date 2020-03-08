@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <title>Stop It</title>
     <script src="../static/stopitScript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/stopitCSS.css">
 </head>
 <body>
-    <h3>Hello Bitches</h3>
-    <button onclick="test()">Click me, MF</button>
+    <div class="hero_section">
+        <image class="hero_logo" src="../static/stopit_logo.png"
+               alt="stop it logo"></image>
+
+        <h3 class="padding-top">Stop this:</h3>
+        <div class="btn_box">
+            <button id="cellPhone" class="choices">Cell Phone</button>
+            <button id="beer" class="choices">Beer and Pop</button>
+            <button id="vape" class="choices">Vape</button>
+            <button id="food"class="choices">Snacks</button>
+            <button id=" " class="choices">Cell Phone</button>
+            <button id=" " class="choices">Cell Phone</button>
+        </div>
+        <button id="startStop" class="choices">Start</button>
+    </div>
 </body>
 </html>
