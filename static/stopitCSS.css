@@ -25,9 +25,9 @@ button {
   text-align: center;
   position: relative;
   top: 10%;
-  left: 50%;
+  left: 52%;
   /*transform: translateX(-50%);*/
-  transform: translate(-50%, -10%);
+  transform: translate(-52%, -10%);
   width: 60%;
 }
 
@@ -45,11 +45,11 @@ button {
 
 .btn_box {
   width: 80%;
-  left: 15%;
-  transform: translateX(15%);
+  left: 13%;
+  transform: translateX(13%);
   background-color: rgba(249, 198, 192, 0.3);
   border-radius: 15px;
-  padding-bottom: 2em;
+  padding: 2em 0em;
 }
 
 h3 {
@@ -68,4 +68,9 @@ button.choices {
   line-height: 24px;
   letter-spacing: -0.333333px;
   color: #2B35335;
+}
+
+.icons {
+  width: 20%;
+  padding: 0em 0.5em;
 }
